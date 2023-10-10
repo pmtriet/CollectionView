@@ -2,13 +2,14 @@
 //  MyCustomSquare.swift
 //  ColectionView
 //
-//  Created by Fy Spoti on 09/10/2023.
+//  Created by Fy Spoti on 10/10/2023.
 //
 
 import Foundation
 import UIKit
-class MyCustomSquare: UICollectionView {
+
+class MyCustomSquare: UICollectionViewCell{
     
-    @IBOutlet weak var imageTBV: UIImageView!
     @IBOutlet weak var LabelTBV: UILabel!
+    @IBOutlet weak var imageTBV: UIImageView!
 }

@@ -17,53 +17,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PpF-8r-HEx" customClass="MyCustomSquare" customModule="ColectionView" customModuleProvider="target">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="idCell" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PpF-8r-HEx">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hZw-Na-fQ4">
-                                    <size key="itemSize" width="414" height="414"/>
+                                    <size key="itemSize" width="100" height="115"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="0bQ-FI-YZg">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="idCell" id="0bQ-FI-YZg" customClass="MyCustomSquare" customModule="ColectionView" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="115"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="uuf-xW-bEi">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="uuf-xW-bEi" customClass="MyCustomSquare" customModule="ColectionView" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="115"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BenTre" translatesAutoresizingMaskIntoConstraints="NO" id="asT-qc-mzi">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="304"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BenTre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1NT-lg-cN4">
+                                                    <rect key="frame" x="0.0" y="80" width="100" height="35"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="304" id="btw-u1-0r9"/>
+                                                        <constraint firstAttribute="height" constant="35" id="bXO-Ae-VZT"/>
                                                     </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BenTre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1NT-lg-cN4">
-                                                    <rect key="frame" x="0.0" y="312" width="414" height="102"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="102" id="EQC-vU-Pbb"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BenTre" translatesAutoresizingMaskIntoConstraints="NO" id="asT-qc-mzi">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="80"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <bool key="isElement" value="YES"/>
+                                                    </accessibility>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="115" id="Dlf-dB-gPO"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="1NT-lg-cN4" secondAttribute="trailing" id="NjG-iB-hxg"/>
-                                                <constraint firstAttribute="bottom" secondItem="1NT-lg-cN4" secondAttribute="bottom" id="aZY-V3-WaO"/>
-                                                <constraint firstItem="asT-qc-mzi" firstAttribute="top" secondItem="uuf-xW-bEi" secondAttribute="top" id="bO8-BZ-NGl"/>
-                                                <constraint firstAttribute="trailing" secondItem="asT-qc-mzi" secondAttribute="trailing" id="qo9-Y0-O01"/>
-                                                <constraint firstItem="asT-qc-mzi" firstAttribute="leading" secondItem="uuf-xW-bEi" secondAttribute="leading" id="xBy-e8-yc6"/>
-                                                <constraint firstItem="1NT-lg-cN4" firstAttribute="leading" secondItem="uuf-xW-bEi" secondAttribute="leading" id="zSa-Hx-wJn"/>
+                                                <constraint firstItem="1NT-lg-cN4" firstAttribute="leading" secondItem="uuf-xW-bEi" secondAttribute="leading" id="3Xr-Ss-5S7"/>
+                                                <constraint firstAttribute="trailing" secondItem="asT-qc-mzi" secondAttribute="trailing" id="Pf6-rR-7up"/>
+                                                <constraint firstItem="1NT-lg-cN4" firstAttribute="top" secondItem="asT-qc-mzi" secondAttribute="bottom" id="Udc-lJ-7IY"/>
+                                                <constraint firstItem="asT-qc-mzi" firstAttribute="leading" secondItem="uuf-xW-bEi" secondAttribute="leading" id="Uyf-cY-eyD"/>
+                                                <constraint firstItem="1NT-lg-cN4" firstAttribute="top" secondItem="asT-qc-mzi" secondAttribute="bottom" id="YtI-ce-9Po"/>
+                                                <constraint firstAttribute="bottom" secondItem="1NT-lg-cN4" secondAttribute="bottom" id="aAX-2V-YQG"/>
+                                                <constraint firstItem="asT-qc-mzi" firstAttribute="top" secondItem="uuf-xW-bEi" secondAttribute="top" id="cRy-VW-p1g"/>
+                                                <constraint firstAttribute="trailing" secondItem="1NT-lg-cN4" secondAttribute="trailing" id="l59-qb-Rb9"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="414" height="414"/>
+                                        <size key="customSize" width="100" height="115"/>
                                         <connections>
-                                            <outlet property="LabelTBV" destination="1NT-lg-cN4" id="lVy-ug-deU"/>
-                                            <outlet property="imageTBV" destination="asT-qc-mzi" id="0Fv-Gf-LCX"/>
-                                            <outlet property="labelTBV" destination="1NT-lg-cN4" id="U44-Rm-Wju"/>
+                                            <outlet property="LabelTBV" destination="1NT-lg-cN4" id="cfL-xq-Na1"/>
+                                            <outlet property="imageTBV" destination="asT-qc-mzi" id="5gp-Xu-5qf"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -80,7 +84,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="DDT-rp-VoH"/>
                     <connections>
-                        <outlet property="collectionView" destination="PpF-8r-HEx" id="CkX-Wz-rAw"/>
+                        <outlet property="collectionView" destination="PpF-8r-HEx" id="hS7-yg-9KQ"/>
+                        <outlet property="view" destination="8bC-Xf-vdC" id="0Xh-dJ-nTd"/>
                         <segue destination="P3C-vb-3Ut" kind="show" identifier="toDetailsVC" id="5GE-Xa-O0b"/>
                     </connections>
                 </viewController>

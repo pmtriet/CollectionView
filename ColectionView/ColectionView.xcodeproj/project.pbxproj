@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D927A592AD5377800E6877E /* MyCustomSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D927A582AD5377800E6877E /* MyCustomSquare.swift */; };
+		0D927A5B2AD53E7B00E6877E /* MyCustomSquarex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D927A5A2AD53E7B00E6877E /* MyCustomSquarex.swift */; };
 		0D9CF9042AD3F4E80012B509 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9CF9032AD3F4E80012B509 /* AppDelegate.swift */; };
 		0D9CF9062AD3F4E80012B509 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9CF9052AD3F4E80012B509 /* SceneDelegate.swift */; };
 		0D9CF90B2AD3F4E80012B509 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D9CF9092AD3F4E80012B509 /* Main.storyboard */; };
@@ -15,10 +17,11 @@
 		0D9CF9182AD3F6130012B509 /* LankMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9CF9172AD3F6130012B509 /* LankMark.swift */; };
 		0D9CF91A2AD3F7240012B509 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9CF9192AD3F7240012B509 /* ViewController.swift */; };
 		0D9CF9212AD400EF0012B509 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9CF9202AD400EF0012B509 /* DetailsVC.swift */; };
-		0D9CF9232AD401200012B509 /* MyCustomSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9CF9222AD401200012B509 /* MyCustomSquare.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D927A582AD5377800E6877E /* MyCustomSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomSquare.swift; sourceTree = "<group>"; };
+		0D927A5A2AD53E7B00E6877E /* MyCustomSquarex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomSquarex.swift; sourceTree = "<group>"; };
 		0D9CF9002AD3F4E80012B509 /* ColectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D9CF9032AD3F4E80012B509 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D9CF9052AD3F4E80012B509 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,7 +32,6 @@
 		0D9CF9172AD3F6130012B509 /* LankMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LankMark.swift; sourceTree = "<group>"; };
 		0D9CF9192AD3F7240012B509 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0D9CF9202AD400EF0012B509 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
-		0D9CF9222AD401200012B509 /* MyCustomSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomSquare.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +73,8 @@
 				0D9CF9172AD3F6130012B509 /* LankMark.swift */,
 				0D9CF9192AD3F7240012B509 /* ViewController.swift */,
 				0D9CF9202AD400EF0012B509 /* DetailsVC.swift */,
-				0D9CF9222AD401200012B509 /* MyCustomSquare.swift */,
+				0D927A582AD5377800E6877E /* MyCustomSquare.swift */,
+				0D927A5A2AD53E7B00E6877E /* MyCustomSquarex.swift */,
 			);
 			path = ColectionView;
 			sourceTree = "<group>";
@@ -148,10 +151,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D9CF9042AD3F4E80012B509 /* AppDelegate.swift in Sources */,
-				0D9CF9232AD401200012B509 /* MyCustomSquare.swift in Sources */,
+				0D927A592AD5377800E6877E /* MyCustomSquare.swift in Sources */,
 				0D9CF9182AD3F6130012B509 /* LankMark.swift in Sources */,
 				0D9CF91A2AD3F7240012B509 /* ViewController.swift in Sources */,
 				0D9CF9062AD3F4E80012B509 /* SceneDelegate.swift in Sources */,
+				0D927A5B2AD53E7B00E6877E /* MyCustomSquarex.swift in Sources */,
 				0D9CF9212AD400EF0012B509 /* DetailsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

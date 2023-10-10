@@ -8,11 +8,17 @@
 import UIKit
 
 class DetailsVC: UIViewController {
-
+    
+    var lankmark: LankMark?
+    
+    @IBOutlet weak var label: UILabel!
+    
+    @IBOutlet weak var image: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        image.image = UIImage(named: lankmark!.image)
+        label.text = lankmark!.name
     }
     
 

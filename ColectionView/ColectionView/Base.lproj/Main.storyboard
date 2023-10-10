@@ -38,6 +38,7 @@
                                                     <rect key="frame" x="0.0" y="80" width="100" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="bXO-Ae-VZT"/>
+                                                        <constraint firstAttribute="width" constant="100" id="eWe-v0-hJ1"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
@@ -50,6 +51,7 @@
                                                     </accessibility>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="115" id="Dlf-dB-gPO"/>
+                                                        <constraint firstAttribute="width" constant="100" id="yoV-lk-6c1"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
@@ -68,9 +70,14 @@
                                         <connections>
                                             <outlet property="LabelTBV" destination="1NT-lg-cN4" id="cfL-xq-Na1"/>
                                             <outlet property="imageTBV" destination="asT-qc-mzi" id="5gp-Xu-5qf"/>
+                                            <segue destination="P3C-vb-3Ut" kind="show" identifier="toDetailsVC" id="eXJ-or-wJq"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="8Ic-MZ-0aZ"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="HRr-9N-D4b"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -86,7 +93,6 @@
                     <connections>
                         <outlet property="collectionView" destination="PpF-8r-HEx" id="hS7-yg-9KQ"/>
                         <outlet property="view" destination="8bC-Xf-vdC" id="0Xh-dJ-nTd"/>
-                        <segue destination="P3C-vb-3Ut" kind="show" identifier="toDetailsVC" id="5GE-Xa-O0b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -130,6 +136,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fB3-8M-M0T"/>
+                    <connections>
+                        <outlet property="image" destination="fvc-Ug-zPI" id="XrA-3u-Ghp"/>
+                        <outlet property="label" destination="uKf-Ll-P0H" id="pxh-YF-uU0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UJP-kE-W3g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

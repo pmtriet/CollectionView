@@ -15,35 +15,14 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-            // #warning Incomplete implementation, return the number of sections
-            return 1
-        }
-    
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return lankmark.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "idCell", for: indexPath) as! MyCustomSquare
-    
-        // Configure the cell
-        
-        let lankmarks = lankmark[indexPath.row]
-        cell.imageTBV.image = UIImage(named: lankmarks.image)
-        cell.LabelTBV.text = lankmarks.name
-    
-        return cell
-    }
-    
+
 
     
     
     			
     
     
-    private var lankmark : [LankMark] = [
+        var lankmark : [LankMark] = [
         LankMark(image: "BenTre", name: "BenTre"),
         LankMark(image: "BinhThuan", name: "BinhThuan"),
         LankMark(image: "BuonMeThuoc", name: "BuonMeThuoc"),
@@ -73,9 +52,48 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
       
     }
     
-
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+            // #warning Incomplete implementation, return the number of sections
+            return 1
+        }
     
     
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return lankmark.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "idCell", for: indexPath) as! MyCustomSquare
+    
+        // Configure the cell
+        
+        let lankmarks = lankmark[indexPath.row]
+        cell.imageTBV.image = UIImage(named: lankmarks.image)
+        cell.LabelTBV.text = lankmarks.name
+        cell.isUserInteractionEnabled = true
+        return cell
+    }
+    
+
+     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+         
+         chosenLandmark = lankmark[indexPath.row]
+        performSegue(withIdentifier: "toDetailsVC", sender: nil)
+         
+    }
+    
 
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetailsVC" {
+            
+                let destinationController = segue.destination as! DetailsVC
+                destinationController.lankmark = chosenLandmark
+            
+        }
+    
+
+
+}
 }

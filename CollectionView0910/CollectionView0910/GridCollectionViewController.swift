@@ -14,25 +14,29 @@ class GridCollectionViewController: UICollectionViewController {
     
     private var dataSet : [Data] = [ Data(image: "banhxeo", name: "Food"),
                                      Data(image: "banhxeo", name: "Food"),
-                                     Data(image: "banhxeo", name: "Food"),
-                                     Data(image: "banhxeo", name: "Food"),
-                                     Data(image: "banhxeo", name: "Food"),
-                                     Data(image: "banhxeo", name: "Food"),
-                                     Data(image: "banhxeo", name: "Food"),
-                                     Data(image: "banhxeo", name: "Food"),
-                                     Data(image: "banhxeo", name: "Food"),
-                                     Data(image: "banhxeo", name: "Food"),
-                                     Data(image: "banhxeo", name: "Food"),
-                                     Data(image: "banhxeo", name: "Food"),
-                                     Data(image: "banhxeo", name: "Food"),
-                                     Data(image: "banhxeo", name: "Food"),
+//                                     Data(image: "banhxeo", name: "Food"),
+//                                     Data(image: "banhxeo", name: "Food"),
+//                                     Data(image: "banhxeo", name: "Food"),
+//                                     Data(image: "banhxeo", name: "Food"),
+//                                     Data(image: "banhxeo", name: "Food"),
+//                                     Data(image: "banhxeo", name: "Food"),
+//                                     Data(image: "banhxeo", name: "Food"),
+//                                     Data(image: "banhxeo", name: "Food"),
+//                                     Data(image: "banhxeo", name: "Food"),
+//                                     Data(image: "banhxeo", name: "Food"),
+//                                     Data(image: "banhxeo", name: "Food"),
+//                                     Data(image: "banhxeo", name: "Food"),
                                      Data(image: "banhxeo", name: "Food"),
                                      Data(image: "banhxeo", name: "Food"),
                                      Data(image: "banhxeo", name: "Food"),
                                      Data(image: "banhxeo", name: "Food")]
+    var listGames: [Games] = []
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -77,6 +81,9 @@ class GridCollectionViewController: UICollectionViewController {
         
         return cell
     }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+//        return 20
+//    }
 
     // MARK: UICollectionViewDelegate
 

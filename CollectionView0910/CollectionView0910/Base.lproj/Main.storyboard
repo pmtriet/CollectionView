@@ -16,31 +16,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vkh-LM-N7L">
-                            <size key="itemSize" width="123" height="173"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="5" minimumInteritemSpacing="5" id="vkh-LM-N7L">
+                            <size key="itemSize" width="200" height="190"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="dataCell" id="hio-7J-eVc" customClass="GridCollectionViewCell" customModule="CollectionView0910" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="123" height="173"/>
+                                <rect key="frame" x="15" y="0.0" width="138" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="JmI-ZA-tOB">
-                                    <rect key="frame" x="0.0" y="0.0" width="123" height="173"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="138" height="190"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="giN-Lf-FRW">
-                                            <rect key="frame" x="0.0" y="0.0" width="123" height="152.66666666666666"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="138" height="169.66666666666666"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="123" id="FRv-kx-5Hi"/>
+                                                <constraint firstAttribute="width" constant="138" id="FRv-kx-5Hi"/>
                                                 <constraint firstAttribute="height" constant="152.66999999999999" id="zeP-jV-hAY"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tag-JW-gmB">
-                                            <rect key="frame" x="0.0" y="152.66666666666666" width="123" height="20.333333333333343"/>
+                                            <rect key="frame" x="0.0" y="169.66666666666666" width="138" height="20.333333333333343"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="123" id="gne-kM-9jE"/>
+                                                <constraint firstAttribute="width" constant="138" id="gne-kM-9jE"/>
                                                 <constraint firstAttribute="height" constant="20.329999999999998" id="y9M-Oo-mTX"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -59,7 +59,7 @@
                                         <constraint firstItem="giN-Lf-FRW" firstAttribute="leading" secondItem="JmI-ZA-tOB" secondAttribute="leading" id="yTS-9E-eC3"/>
                                     </constraints>
                                 </collectionViewCellContentView>
-                                <size key="customSize" width="123" height="173"/>
+                                <size key="customSize" width="138" height="190"/>
                                 <connections>
                                     <outlet property="ImageView" destination="giN-Lf-FRW" id="L8j-Sl-tgk"/>
                                     <outlet property="NameLabel" destination="Tag-JW-gmB" id="bhq-9B-lmD"/>

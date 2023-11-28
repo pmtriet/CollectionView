@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class GridCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var ImageView: UIImageView!
     @IBOutlet weak var NameLabel: UILabel!
